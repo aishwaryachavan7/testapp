@@ -1,0 +1,21 @@
+{
+  "name": "protractor",
+  "version": "1.1.0",
+  "engines": {
+    "node": "9.4.0"
+  },
+  "scripts": {
+    "prepare": "node_modules/.bin/webdriver-manager update",
+    "update": "node_modules/.bin/webdriver-manager update,
+  },
+  "repository": {
+    "type": "git",
+  
+  },
+  "keywords": [
+    "protractor",
+    "protractor-flake": "3.0.1"
+  },
+ 
+}
+
