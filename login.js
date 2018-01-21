@@ -1,5 +1,4 @@
 import loginPage from 'https://github.com/makzmslv/angular-sample-webapp/blob/master/e2e/app.e2e-spec.ts ';
-import friendPage from '../pages/friendPage';
 import userData from '../data/userData';
 
 describe ('angular login', () => {
@@ -19,9 +18,9 @@ describe ('angular login', () => {
         expect(loginPage.errorMessage.isDisplayed()).toBe(true);
     });
 
-    it('should goto friend pages on successful login', () => {
+    it('should goto user pages on successful login', () => {
         loginPage.loginAs(userData.testUser);
 
-        expect(friendPage.loaded()).toBe(true);
+        expect(UserPage.loaded()).toBe(true);
     });
 });
